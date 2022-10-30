@@ -130,7 +130,39 @@ html, body{
     margin-bottom: 10%;
 }
 .attribution{
-    margin-top: auto;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+}
+.succes{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    align-self: center;
+}
+.succes__picture{
+    margin: 10px;
+    width: 75px;
+
+}
+.succes__img{
+    display: block;
+    width: 100%;
+}
+.succes__title{
+    color: hsl(278, 68%, 11%);
+    margin: 10px;
+}
+.succes__p{
+    color: hsl(279, 6%, 55%);
+    font-size: 13px;
+    margin: 10px;
+}
+.hide{
+    display: none;
 }
 
 
