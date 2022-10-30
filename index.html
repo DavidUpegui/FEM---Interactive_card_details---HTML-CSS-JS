@@ -19,16 +19,20 @@
 </head>
 <body>
   <main class="main">
-    <section class="cc">
-      <div class="cc__background"></div>
-      <div class="cc__information cc__information-front">
-        <img src="./images/card-logo.svg" alt="credit card logo" class="cc__logo">
-        <span class="cc__number">0000 0000 0000</span>
-        <span class="cc__name">Jane Apleseed</span>
-        <span class="cc__date">00/00</span>
+    <section class="ccard-container">
+      <div class="ccard-container__background"></div>
+      <div class="ccard ccard--front">
+        <img src="./images/bg-card-front.png" alt="" class="ccard__background">
+        <div class="ccard__information">
+          <img src="./images/card-logo.svg" alt="credit card logo" class=" ccard__logo">
+          <span class="ccard__number">0000 0000 0000 0000</span>
+          <span class="ccard__name">Jane Apleseed</span>
+          <span class="ccard__date">00/00</span>
+        </div>
       </div>
-      <div class="cc__information cc__information-back">
-        <span class="cc__cvc">000</span>
+      <div class="ccard ccard--back">
+        <img src="./images/bg-card-back.png" alt="" class="ccard__background">
+        <span class="ccard__cvc">000</span>
       </div>
     </section>
     <form action="" class="form">
@@ -40,17 +44,18 @@
         <label for="number" class="form__label">Card Number</label>
         <input type="text" class="form__input" id="number" placeholder="e.g. 1234 5678 9123 0000">
       </div>
-      <div class="forum__section-group">
-        <div class="forum__section">
-          <label for="month" class="form__label">Exp. Date (MM/YY)</label>
-          <input type="text" class="form_input" id="month" placeholder="MM">
-          <input type="text" class="form_input" id="year" placeholder="YY">
+      <div class="form__section-group">
+        <div class="form__section form__section--date">
+          <label for="month" class="form__label form__label--date">Exp. Date (MM/YY)</label>
+          <input type="text" class="form__input" id="month" placeholder="MM">
+          <input type="text" class="form__input" id="year" placeholder="YY">
         </div>
-        <div class="forum__section">
+        <div class="form__section">
           <label for="cvc" class="form__label">CVC</label>
-          <input type="text" class="form_input" id="cvc" placeholder="e.g. 123">
+          <input type="text" class="form__input" id="cvc" placeholder="e.g. 123">
         </div>
       </div>
+      <input type="submit" class="btn btn--confirm" value="Confirm">
     </form>
   </main>
   
