@@ -6,6 +6,8 @@
     font-family: Space Grotesk, sans-serif;
 }
 html, body{
+    display: flex;
+    flex-direction: column;
     background-color: hsl(0, 0%, 100%);
 }
 .main{
@@ -133,20 +135,20 @@ html, body{
     margin-bottom: 10%;
 }
 .attribution{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-100%);
+    justify-self: center;
+    margin-top: auto;
+    padding-bottom: 10px;
 }
 .succes{
     width: 85%;
-    height: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 10%;
     align-self: center;
+    margin-bottom: 10%;
 }
 .succes__picture{
     margin: 5%;
@@ -239,5 +241,11 @@ html, body{
     }
     .succes__picture{
         width: 75px;
+    }
+    .attribution{
+        position: absolute;
+        top:100%;
+        left: 50%;
+        transform: translate(-50%, 100%);
     }
 }

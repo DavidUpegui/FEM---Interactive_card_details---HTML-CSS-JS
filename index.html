@@ -35,14 +35,14 @@
         <span class="ccard__cvc" id="txt-cvc">000</span>
       </div>
     </section>
-    <form action="" class="form hide">
+    <form action="" class="form">
       <div class="form__section">
         <label for="name" class="form__label">CardHolder Name</label>
         <input type="text" class="form__input" id="inpt-name" placeholder="e.g. Jane Appleseed">
       </div>
       <div class="form__section">
         <label for="number" class="form__label">Card Number</label>
-        <input type="text" class="form__input" id="inpt-number" placeholder="e.g. 1234 5678 9123 0000">
+        <input type="text" class="form__input" id="inpt-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
       </div>
       <div class="form__section-group">
         <div class="form__section form__section--date">
@@ -57,7 +57,7 @@
       </div>
       <input type="submit" class="btn btn--app" id="btn-confirm" value="Confirm">
     </form>
-    <section class="succes">
+    <section class="succes hide">
       <picture class="succes__picture">
         <img src="./images/icon-complete.svg" alt="Complete icon" class="succes__img">
       </picture>
@@ -70,5 +70,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">David Upegui</a>.
   </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
