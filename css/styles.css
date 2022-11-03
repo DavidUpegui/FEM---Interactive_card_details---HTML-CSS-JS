@@ -10,6 +10,14 @@ html, body{
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
 }
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .main{
     display: flex;
     flex-direction: column;
