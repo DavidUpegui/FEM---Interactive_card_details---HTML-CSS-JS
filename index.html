@@ -32,29 +32,35 @@
       </div>
       <div class="ccard ccard--back">
         <img src="./images/bg-card-back.png" alt="" class="ccard__background">
-        <span class="ccard__cvc" id="txt-cvc">000</span>
+        <span class="ccard__cvc" id="txt-cvc">XXX</span>
       </div>
     </section>
     <form action="" class="form" id="form">
       <div class="form__section">
         <label for="name" class="form__label">CardHolder Name</label>
         <input type="text" class="form__input" id="inpt-name" placeholder="e.g. Jane Appleseed">
+        <p class="exception hide" id="excep-name">Can't be blank</p>
       </div>
       <div class="form__section">
         <label for="number" class="form__label">Card Number</label>
-        <input type="text" class="form__input" id="inpt-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <input type="text" class="form__input " id="inpt-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <p class="exception hide" id="excep-number">Can't be blank</p>
       </div>
       <div class="form__section-group">
         <div class="form__section form__section--date">
           <label for="month" class="form__label form__label--date">Exp. Date (MM/YY)</label>
           <input type="number" class="form__input" id="inpt-month" placeholder="MM" maxlength="2">
           <input type="number" class="form__input" id="inpt-year" placeholder="YY" maxlength="2">
+          <p class="exception exception--month hide" id="excep-month">Can't be blank</p>
+          <p class="exception exception--year hide" id="excep-year">Can't be blank</p>
         </div>
         <div class="form__section">
           <label for="cvc" class="form__label">CVC</label>
           <input type="number" class="form__input" id="inpt-cvc" placeholder="e.g. 123" maxlength="3">
+        <p class="exception hide" id="excep-cvc">Can't be blank</p>
         </div>
       </div>
+      <p class="exception exception--submit hide" id="excep-submit">Be Sure that you have filled all the fields correctly.</p>
       <input type="submit" class="btn btn--app" id="btn-confirm" value="Confirm">
     </form>
     <section class="succes hide" id="succes">

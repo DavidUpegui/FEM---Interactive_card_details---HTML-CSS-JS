@@ -101,12 +101,23 @@ input::-webkit-inner-spin-button {
     margin-bottom: 5px;
 }
 .form__input{
+    --border-r: 0.3rem;
+    --border-w: 1px;
     outline: none;
     height: 2rem;
     width: 100%;
-    border-radius: 0.3em;
-    border: solid hsl(270, 3%, 87%) 1px;
     padding-inline: 1rem;
+    border: solid hsl(270, 3%, 87%) var(--border-w);
+    border-radius: var(--border-r);
+}
+.form__input:focus{
+    outline: none;
+    background: linear-gradient(white,white) padding-box, linear-gradient(90deg,hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+    border: solid transparent var(--border-w);
+    border-radius: var(--border-r);
+}
+.form__input--invalid{
+    border-color: hsl(0, 100%, 66%);
 }
 .form__input::placeholder{
     color: hsl(270, 3%, 87%);
@@ -179,6 +190,21 @@ input::-webkit-inner-spin-button {
 }
 .hide{
     display: none;
+}
+.exception{
+    margin-top: 2px;
+    color: hsl(0, 100%, 66%);
+    font-size: 9px;
+}
+.exception--month{
+    grid-column: 1/2;
+}
+.exception--year{
+    grid-column: 2/3;
+}
+.exception--submit{
+    font-size: 12px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 1440px){
